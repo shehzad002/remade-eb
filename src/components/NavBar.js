@@ -121,7 +121,7 @@ function NavBar() {
 				
              </li>
              <li className="nav-item" style={{color:"#fff"}}></li>
-             <li className="nav-item" style={{color:"#fff"}}> Balance: {click ? userBalance : errorMessage} BNB</li>
+             <li className="nav-item" style={{color:"#fff"}}> Balance: {userBalance} {errorMessage} BNB</li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
