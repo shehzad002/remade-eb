@@ -117,11 +117,11 @@ function NavBar() {
                 Re-Invest
               </NavLink>
             </li>
-            <li><button className="btn btn-warning" onClick={connectWalletHandler}>{connButtonText}</button>
-        
+            <li><button className="btn btn-warning" onClick={connectWalletHandler}>{connButtonText} {defaultAccount}</button>
+				
              </li>
              <li className="nav-item" style={{color:"#fff"}}></li>
-             <li className="nav-item" style={{color:"#fff"}}> Balance: {userBalance} BNB</li>
+             <li className="nav-item" style={{color:"#fff"}}> Balance: {click ? userBalance : errorMessage} BNB</li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
